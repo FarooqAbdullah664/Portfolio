@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farooq Abdullah — MERN Stack Developer</title>
+<meta name="description" content="Farooq Abdullah, MERN Stack Developer. React, Node.js, Express, MongoDB, REST APIs.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============================================================
+     PRELOADER
+     ============================================================ -->
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-count" id="preloaderCount">01<span class="pct">%</span></div>
+    <div class="preloader-line"><span id="preloaderLineFill"></span></div>
+    <div class="preloader-name">Farooq Abdullah</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<header class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#hero" class="nav-logo" aria-label="Farooq Abdullah home"><span class="nav-logo-mark" aria-hidden="true"></span><span class="nav-logo-word">FAROOQ<span class="accent-dot">.</span></span></a>
+
+    <nav class="nav-links">
+      <a href="#about"><span class="idx">01</span>About</a>
+      <a href="#work"><span class="idx">02</span>Work</a>
+      <a href="#skills"><span class="idx">03</span>Skills</a>
+      <a href="#education"><span class="idx">04</span>Education</a>
+      <a href="#certificates"><span class="idx">05</span>Certificates</a>
+      <a href="#contact" class="nav-cta">Let's Talk <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </nav>
+
+    <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-controls="navMobile" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+
+  <!-- huge background typography -->
+  <div class="hero-bg-type" id="heroBgType" aria-hidden="true">DEVELOPER</div>
+
+  <div class="container hero-grid">
+
+    <!-- left: content -->
+    <div class="hero-content">
+
+      <div class="reveal reveal-badge">
+        <span class="badge-available">
+          <span class="dot-pulse"></span>
+          AVAILABLE FOR WORK
+        </span>
+      </div>
+
+      <p class="reveal hero-eyebrow" data-reveal-order="1">HELLO, I'M</p>
+
+      <h1 class="hero-name">
+        <span class="line line-1" data-reveal-order="2">FAROOQ</span>
+        <span class="line line-2" data-reveal-order="3">ABDULLAH</span>
+      </h1>
+
+      <p class="reveal hero-role" data-reveal-order="4">
+        <span class="role-rotator" id="roleRotator">
+          <span class="role-word is-active">MERN STACK DEVELOPER</span>
+          <span class="role-word">PROBLEM SOLVER</span>
+          <span class="role-word">FULL-STACK ENGINEER</span>
+          <span class="role-word">LIFELONG LEARNER</span>
+         <span class="role-word">REACT J's DEVELOPER </span>
+         <span class="role-word">NODE J's  DEVELOPER </span>
+
+        </span>
+      </p>
+
+      <p class="reveal hero-desc" data-reveal-order="5">
+        Building modern, scalable and interactive web experiences.
+      </p>
+
+      <div class="reveal hero-ctas" data-reveal-order="6">
+        <a href="#work" class="btn btn-primary">
+          VIEW MY WORK <span class="arrow">→</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          LET'S CONNECT <span class="arrow">→</span>
+        </a>
+      </div>
+
+        <div class="reveal hero-cv" data-reveal-order="7">
+        <a href="Farooq-Abdullah-CV.pdf" download="Farooq-Abdullah-CV.pdf" class="cv-link">
+          <span class="cv-icon-wrap">
+            <svg class="cv-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          </span>
+          DOWNLOAD CV
+        </a>
+      </div>
+
+      <div class="hero-socials" id="heroSocials">
+        <a href="https://github.com/FarooqAbdullah664" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.16a10.8 10.8 0 0 1 5.7 0c2.17-1.47 3.13-1.16 3.13-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/farooq-abdullah-9484a4331" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:farooqmalikp21@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- right: portrait + orbiting skill badges -->
+    <div class="hero-visual" id="heroVisual">
+      <div class="portrait-glow"></div>
+
+      <div class="orbit-rings" aria-hidden="true">
+        <div class="orbit-ring ring-a"></div>
+        <div class="orbit-ring ring-b"></div>
+      </div>
+
+      <img class="portrait-img" id="portraitImg" src="portrait-hero.webp" alt="Farooq Abdullah, MERN Stack Developer" />
+
+      <div class="orbit-badges" id="orbitWrap">
+        <div class="orbit-track track-a">
+          <div class="orbit-item"><span class="tb-dot"></span>React.js</div>
+        </div>
+        <div class="orbit-track track-a track-a-offset">
+          <div class="orbit-item"><span class="tb-dot"></span>Express.js</div>
+        </div>
+        <div class="orbit-track track-b">
+          <div class="orbit-item"><span class="tb-dot"></span>Node.js</div>
+        </div>
+        <div class="orbit-track track-b track-b-offset">
+          <div class="orbit-item"><span class="tb-dot"></span>MongoDB</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-indicator">
+    <span>SCROLL TO EXPLORE</span>
+    <span class="scroll-line"><i></i></span>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     ABOUT BANNER — stats highlight
+     ============================================================ -->
+<section class="about-banner" id="about-banner">
+  <div class="container">
+
+    <div class="about-banner-head">
+      <div class="about-banner-head-copy">
+        <p class="about-banner-eyebrow ab-reveal">At a Glance</p>
+        <h2 class="about-banner-title ab-reveal">
+          Building with purpose.<br>
+          Growing with <em>every project.</em>
+        </h2>
+      </div>
+      <div class="about-banner-mark ab-reveal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3"/><path d="m16 9 3 3-3 3"/><path d="m14 6-4 12"/></svg>
+      </div>
+    </div>
+
+    <div class="about-banner-cards">
+
+      <div class="ab-card ab-reveal" data-index="01">
+        <div class="ab-card-top">
+          <div class="ab-card-icon">
+            <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 7l-4 10"/></svg>
+          </div>
+          <span class="ab-card-arrow" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        </div>
+        <div class="ab-card-num" data-target="4">0<span class="ab-sup">+</span></div>
+        <div class="ab-card-label">Projects Built</div>
+      </div>
+
+      <div class="ab-card ab-reveal" data-index="02">
+        <div class="ab-card-top">
+          <div class="ab-card-icon">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg>
+          </div>
+          <span class="ab-card-arrow" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        </div>
+        <div class="ab-card-num" data-target="2">0</div>
+        <div class="ab-card-label">Happy Clients</div>
+      </div>
+
+      <div class="ab-card ab-reveal" data-index="03">
+        <div class="ab-card-top">
+          <div class="ab-card-icon">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 12h8M12 12v3"/></svg>
+          </div>
+          <span class="ab-card-arrow" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        </div>
+        <div class="ab-card-num" data-target="1">0<span class="ab-sup">+</span></div>
+        <div class="ab-card-label">Years Experience</div>
+      </div>
+
+      <div class="ab-card ab-reveal" data-index="04">
+        <div class="ab-card-top">
+          <div class="ab-card-icon">
+            <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+          </div>
+          <span class="ab-card-arrow" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        </div>
+        <div class="ab-card-num" data-target="5">0<span class="ab-sup">+</span></div>
+        <div class="ab-card-label">Technologies</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT — "Who I Am" + VIP developer ID card
+     ============================================================ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <!-- left: VIP-style developer ID card -->
+    <div class="about-visual">
+      <div class="id-card-wrap" id="idCardWrap">
+        <div class="id-card">
+          <div class="id-card-sheen" id="idCardSheen"></div>
+
+          <div class="id-card-top">
+            <div class="id-chip"></div>
+            <span class="id-badge"><span class="dot-pulse-sm"></span>ACTIVE</span>
+          </div>
+
+          <div class="id-photo-wrap">
+            <img src="portrait-id.webp" alt="Farooq Abdullah" class="id-photo" />
+          </div>
+
+          <div class="id-name">FAROOQ ABDULLAH</div>
+          <div class="id-title">MERN STACK DEVELOPER</div>
+
+          <div class="id-divider"></div>
+
+          <div class="id-meta">
+            <div class="id-meta-row"><span>CONTACT</span><a href="tel:+923223399125">+92 322 3399125</a></div>
+            <div class="id-meta-row"><span>EMAIL</span><a href="mailto:farooqmalikp21@gmail.com">farooqmalikp21@gmail.com</a></div>
+            <div class="id-meta-row"><span>GITHUB</span><a href="https://github.com/FarooqAbdullah664" target="_blank" rel="noopener">FarooqAbdullah664</a></div>
+            <div class="id-meta-row"><span>LINKEDIN</span><a href="https://linkedin.com/in/farooq-abdullah-9484a4331" target="_blank" rel="noopener">Farooq Abdullah</a></div>
+          </div>
+
+          <div class="id-tech-row">
+            <span class="id-tech-chip">React</span>
+            <span class="id-tech-chip">Node</span>
+            <span class="id-tech-chip">Express</span>
+            <span class="id-tech-chip">Mongo</span>
+          </div>
+
+          <div class="id-barcode" aria-hidden="true"></div>
+          <div class="id-verified">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            VERIFIED DEVELOPER
+          </div>
+
+          <span class="id-corner tl"></span>
+          <span class="id-corner tr"></span>
+          <span class="id-corner bl"></span>
+          <span class="id-corner br"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- right: about copy -->
+    <div class="about-content">
+      <p class="section-eyebrow about-reveal">ABOUT ME</p>
+      <h2 class="section-title about-reveal">Who I Am</h2>
+
+      <p class="about-lead about-reveal">
+        Software Engineering student at Iqra University and MERN stack developer
+        who likes turning ideas into real, working software.
+      </p>
+
+      <p class="about-body about-reveal">
+        After 13 months of professional training at SMIT, I've shipped full-stack
+        projects — from an AI resume builder to e-commerce platforms — and I'm now
+        looking for an internship or junior role to keep building and learning.
+      </p>
+
+      <div class="about-stats about-reveal">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Core Technologies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">13</span>
+          <span class="stat-label">Months Training</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     WORK — featured projects
+     ============================================================ -->
+<section class="work" id="work">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">SELECTED WORK</p>
+      <h2 class="section-title reveal-up">Things I've Built</h2>
+      <p class="section-sub reveal-up">
+        A mix of full-stack MERN apps, an AI-powered SaaS tool, and a Java project
+        built on core data structures &amp; algorithms.
+      </p>
+    </div>
+
+    <div class="work-grid">
+
+      <div class="project-card featured reveal-up">
+        <div class="project-preview" data-fallback="AI Resume Builder">
+          <span class="project-preview-label">Live Product</span>
+          <span class="project-featured-badge">FEATURED</span>
+          <img src="https://image.thum.io/get/width/1200/crop/675/noanimate/https://ai-resume-builder-frontend-six-ebon.vercel.app/" alt="AI Resume Builder website preview" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-top">
+            <span class="project-index">01</span>
+          </div>
+          <h3 class="project-title">AI Resume Builder</h3>
+          <p class="project-desc">SaaS-style resume builder that generates content with AI, scores resumes in real time against ATS criteria, and renders a live preview as you edit. Built on the MERN stack with MongoDB for resume data.</p>
+          <div class="project-tags">
+            <span class="tag-chip">React.js</span>
+            <span class="tag-chip">Node.js</span>
+            <span class="tag-chip">MongoDB</span>
+            <span class="tag-chip">AI / ATS</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://ai-resume-builder-frontend-six-ebon.vercel.app/" target="_blank" rel="noopener">
+              Live Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured reveal-up">
+        <div class="project-preview ridego-preview">
+          <span class="project-preview-label">Java Desktop App</span>
+          <span class="project-featured-badge">FEATURED</span>
+          <img src="ridego%20pic.PNG" alt="RideGo application screenshot" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-top">
+            <span class="project-index">02</span>
+          </div>
+          <h3 class="project-title">RideGo</h3>
+          <p class="project-desc">DSA-based ride-booking system in Java — Graphs and Dijkstra's Algorithm for route optimization, priority queues for driver assignment, and stacks/queues for ride history. SQLite storage with a Java Swing GUI.</p>
+          <div class="project-tags">
+            <span class="tag-chip">Java</span>
+            <span class="tag-chip">DSA</span>
+            <span class="tag-chip">SQLite</span>
+            <span class="tag-chip">Swing GUI</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://www.linkedin.com/posts/farooq-abdullah-9484a4331_java-datastructures-algorithms-activity-7474920580627210241-jGGP?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAFOLSkgBzonqQiDlpfoIPEqAipYvPhySmsU" target="_blank" rel="noopener">
+              Watch Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up">
+        <div class="project-preview" data-fallback="Helplytic AI">
+          <span class="project-preview-label">AI Platform</span>
+          <img src="https://image.thum.io/get/width/1200/crop/675/noanimate/https://helplytic-ai-frontend-copy.vercel.app/" alt="Helplytic AI website preview" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-top"><span class="project-index">03</span></div>
+          <h3 class="project-title">Helplytic AI</h3>
+          <p class="project-desc">A developer help platform where users post technical queries and get AI-generated solutions, backed by JWT authentication and RESTful APIs.</p>
+          <div class="project-tags">
+            <span class="tag-chip">React.js</span>
+            <span class="tag-chip">JWT</span>
+            <span class="tag-chip">REST API</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://helplytic-ai-frontend-copy.vercel.app/" target="_blank" rel="noopener">
+              Live Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up">
+        <div class="project-preview" data-fallback="E-Commerce">
+          <span class="project-preview-label">Full-Stack Store</span>
+          <img src="https://image.thum.io/get/width/1200/crop/675/noanimate/https://ecommerce-frontend-ruby-two.vercel.app/" alt="E-Commerce web application preview" loading="lazy">
+        </div>
+        <div class="project-content">
+          <div class="project-top"><span class="project-index">04</span></div>
+          <h3 class="project-title">E-Commerce Web App</h3>
+          <p class="project-desc">Full-stack MERN store with an admin dashboard for managing products, users and orders through complete CRUD operations, plus JWT-based authentication.</p>
+          <div class="project-tags">
+            <span class="tag-chip">MERN</span>
+            <span class="tag-chip">JWT</span>
+            <span class="tag-chip">CRUD</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="https://ecommerce-frontend-ruby-two.vercel.app/" target="_blank" rel="noopener">
+              Live Demo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="work-more reveal-up">
+      <a class="work-more-link" href="https://github.com/FarooqAbdullah664" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.16a10.8 10.8 0 0 1 5.7 0c2.17-1.47 3.13-1.16 3.13-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        View More on GitHub
+        <span class="work-more-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS — tabbed tech stack
+     ============================================================ -->
+<section class="skills" id="skills">
+  <div class="container">
+
+    <div class="section-head skills-reveal">
+      <p class="section-eyebrow">TECHNICAL SKILLS</p>
+      <h2 class="section-title">My <em style="font-style:italic;color:var(--accent)">Expertise</em> &amp; Tech Stack</h2>
+      <p class="section-sub">Technologies and tools I have mastered as a Full Stack MERN Developer.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="skills-tabs skills-reveal">
+      <button class="skills-tab active" data-tab="frontend">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        FRONTEND
+      </button>
+      <button class="skills-tab" data-tab="backend">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+        BACKEND
+      </button>
+      <button class="skills-tab" data-tab="languages">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/></svg>
+        LANGUAGES
+      </button>
+      <button class="skills-tab" data-tab="tools">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        TOOLS
+      </button>
+    </div>
+
+    <!-- FRONTEND panel -->
+    <div class="skills-panel active skills-reveal" id="panel-frontend">
+      <div class="sp-header">
+        <div class="sp-header-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div class="sp-header-text">
+          <h3>Frontend Development</h3>
+          <p>Core skills and proficiency levels</p>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div class="sp-grid">
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" aria-hidden="true"></span>HTML5</span>
+              <span class="sp-skill-pct">95%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="95"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" aria-hidden="true"></span>CSS3 &amp; Responsive</span>
+              <span class="sp-skill-pct">92%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="92"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" aria-hidden="true"></span>JavaScript ES6+</span>
+              <span class="sp-skill-pct">90%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="90"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" aria-hidden="true"></span>TypeScript</span>
+              <span class="sp-skill-pct">78%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="78"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" aria-hidden="true"></span>React.js</span>
+              <span class="sp-skill-pct">88%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="88"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="" aria-hidden="true"></span>Next.js</span>
+              <span class="sp-skill-pct">76%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="76"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKEND panel -->
+    <div class="skills-panel" id="panel-backend">
+      <div class="sp-header">
+        <div class="sp-header-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+        </div>
+        <div class="sp-header-text">
+          <h3>Backend Development</h3>
+          <p>Server-side skills and proficiency levels</p>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div class="sp-grid">
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="" aria-hidden="true"></span>Node.js</span>
+              <span class="sp-skill-pct">85%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="85"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" aria-hidden="true"></span>MongoDB</span>
+              <span class="sp-skill-pct">84%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="84"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="" aria-hidden="true"></span>Express.js</span>
+              <span class="sp-skill-pct">83%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="83"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="" aria-hidden="true"></span>Firebase</span>
+              <span class="sp-skill-pct">80%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="80"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jsonwebtokens.svg" alt="" aria-hidden="true"></span>JWT Auth</span>
+              <span class="sp-skill-pct">82%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="82"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9.5 4.5 13 8 16.5"/><path d="m16 9.5 3.5 3.5-3.5 3.5"/><path d="m14 6-4 14"/></svg></span>REST APIs</span>
+              <span class="sp-skill-pct">88%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="88"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAMMING LANGUAGES panel -->
+    <div class="skills-panel" id="panel-languages">
+      <div class="sp-header">
+        <div class="sp-header-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3"/><path d="m16 9 4 3-4 3"/><path d="m14 5-4 14"/></svg>
+        </div>
+        <div class="sp-header-text">
+          <h3>Programming Languages</h3>
+          <p>Core programming knowledge and proficiency levels</p>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div class="sp-grid">
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="" aria-hidden="true"></span>C Programming</span>
+              <span class="sp-skill-pct">75%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="75"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" aria-hidden="true"></span>Java</span>
+              <span class="sp-skill-pct">72%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="72"></div></div>
+          </div>
+
+          <div class="sp-skill-row">
+            <div class="sp-skill-info">
+              <span class="sp-skill-name"><span class="sp-skill-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" aria-hidden="true"></span>Python</span>
+              <span class="sp-skill-pct">78%</span>
+            </div>
+            <div class="sp-bar-track"><div class="sp-bar-fill" data-width="78"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOLS panel -->
+    <div class="skills-panel" id="panel-tools">
+      <div class="sp-header">
+        <div class="sp-header-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <div class="sp-header-text">
+          <h3>Tools &amp; Technologies</h3>
+          <p>Development tools and workflow</p>
+        </div>
+      </div>
+      <div class="sp-body">
+        <div class="sp-cards">
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Git &amp; GitHub</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Vercel</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">VS Code</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Postman</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="m16.5 7.5 3-3M18 4.5h1.5V6"/></svg></div>
+            <span class="sp-tool-name">DSA</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/><path d="M10 7h4a4 4 0 0 1 4 4v3M14 17h-4a4 4 0 0 1-4-4v-3"/></svg></div>
+            <span class="sp-tool-name">OOP</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Tailwind CSS</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Bootstrap</span>
+          </div>
+
+          <div class="sp-tool-card">
+            <div class="sp-tool-icon"><img class="icon-invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" alt="" aria-hidden="true"></div>
+            <span class="sp-tool-name">Framer Motion</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="skills-ticker-wrap skills-reveal">
+      <p class="skills-ticker-label">Full Tech Stack</p>
+      <div class="skills-ticker">
+        <div class="ticker-set">
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span>HTML5</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></span>CSS3</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></span>JavaScript</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt=""></span>TypeScript</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""></span>React.js</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt=""></span>Next.js</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt=""></span>Tailwind CSS</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt=""></span>Bootstrap</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" alt=""></span>Framer Motion</span>
+        </div>
+        <div class="ticker-set" aria-hidden="true">
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></span>HTML5</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></span>CSS3</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></span>JavaScript</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt=""></span>TypeScript</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""></span>React.js</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt=""></span>Next.js</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt=""></span>Tailwind CSS</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt=""></span>Bootstrap</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg" alt=""></span>Framer Motion</span>
+        </div>
+      </div>
+
+      <div class="skills-ticker ticker-reverse">
+        <div class="ticker-set">
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt=""></span>Node.js</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt=""></span>Express.js</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt=""></span>MongoDB</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt=""></span>Firebase</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jsonwebtokens.svg" alt=""></span>JWT</span>
+          <span class="ticker-chip"><span class="ticker-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9.5 4.5 13 8 16.5"/><path d="m16 9.5 3.5 3.5-3.5 3.5"/><path d="m14 6-4 14"/></svg></span>REST API</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""></span>GitHub</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt=""></span>Vercel</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt=""></span>Postman</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt=""></span>C Programming</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></span>Java</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""></span>Python</span>
+        </div>
+        <div class="ticker-set" aria-hidden="true">
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt=""></span>Node.js</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt=""></span>Express.js</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt=""></span>MongoDB</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt=""></span>Firebase</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jsonwebtokens.svg" alt=""></span>JWT</span>
+          <span class="ticker-chip"><span class="ticker-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9.5 4.5 13 8 16.5"/><path d="m16 9.5 3.5 3.5-3.5 3.5"/><path d="m14 6-4 14"/></svg></span>REST API</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""></span>GitHub</span>
+          <span class="ticker-chip"><span class="ticker-icon icon-invert"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt=""></span>Vercel</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt=""></span>Postman</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt=""></span>C Programming</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></span>Java</span>
+          <span class="ticker-chip"><span class="ticker-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""></span>Python</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION — timeline
+     ============================================================ -->
+<section class="education" id="education">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">BACKGROUND</p>
+      <h2 class="section-title reveal-up">Education</h2>
+      <p class="education-intro reveal-up">A focused academic path in software engineering, supported by a strong foundation in science and pre-engineering studies.</p>
+    </div>
+
+    <div class="edu-showcase">
+      <article class="edu-featured reveal-up">
+        <div class="edu-featured-top">
+          <span class="edu-program-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg>
+            Current Program
+          </span>
+          <span class="edu-featured-date">2024 — Present</span>
+        </div>
+
+        <div class="edu-featured-body">
+          <div class="edu-featured-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5"/><path d="M21 10v6"/></svg>
+          </div>
+          <div>
+            <p class="edu-kicker">Bachelor's Degree</p>
+            <h3 class="edu-featured-title">BS Software Engineering</h3>
+            <p class="edu-featured-school">Iqra University</p>
+          </div>
+          <span class="edu-live-status"><span></span>In Progress</span>
+        </div>
+
+        <div class="edu-featured-meta">
+          <div><span>Institution</span><strong>Iqra University</strong></div>
+          <div><span>Location</span><strong>Karachi, Pakistan</strong></div>
+          <div><span>Academic Level</span><strong>Undergraduate</strong></div>
+        </div>
+      </article>
+
+      <div class="edu-connector" aria-hidden="true"><span></span></div>
+      <p class="edu-foundation-label reveal-up">Academic Foundation</p>
+
+      <div class="edu-history-grid">
+        <article class="edu-history-card reveal-up">
+          <div class="edu-history-top">
+            <span class="edu-history-index">02</span>
+            <span class="edu-history-date">2022 — 2024</span>
+          </div>
+          <div class="edu-history-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+          </div>
+          <p class="edu-history-type">Higher Secondary Education</p>
+          <h3 class="edu-history-title">Intermediate (Pre-Engineering)</h3>
+          <p class="edu-history-school">PECHS College, Karachi</p>
+          <span class="edu-complete-status">Completed</span>
+        </article>
+
+        <article class="edu-history-card reveal-up">
+          <div class="edu-history-top">
+            <span class="edu-history-index">03</span>
+            <span class="edu-history-date">2022</span>
+          </div>
+          <div class="edu-history-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+          </div>
+          <p class="edu-history-type">Secondary Education</p>
+          <h3 class="edu-history-title">Matriculation (Science)</h3>
+          <p class="edu-history-school">Karachi Board</p>
+          <span class="edu-complete-status">Completed</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATES
+     ============================================================ -->
+<section class="certificates" id="certificates">
+  <div class="container">
+
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">CREDENTIALS</p>
+      <h2 class="section-title reveal-up">Certifications</h2>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal-up" role="button" tabindex="0" aria-label="Open Modern Web Application Development certificate">
+        <div class="cert-image-wrap">
+          <img class="cert-image" src="completion%20certficate.jpeg" alt="Modern Web Application Development completion certificate from Saylani Mass Training Programme">
+        </div>
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Modern Web Application Development</h3>
+            <p class="cert-issuer">Saylani Mass Training Programme &middot; Batch 16</p>
+            <p class="cert-date">Apr 2025 &mdash; Apr 2026 &middot; 13 Months</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up" role="button" tabindex="0" aria-label="Open Dev 2 Buildathon certificate">
+        <div class="cert-image-wrap">
+          <img class="cert-image" src="iqra%20buildathon.jpeg" alt="Dev 2 Buildathon participation certificate from SkillVerse and Iqra University">
+        </div>
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">Dev 2: Buildathon</h3>
+            <p class="cert-issuer">SkillVerse 2026, IU Fest &middot; Iqra University</p>
+            <p class="cert-date">15&ndash;17 June 2026 &middot; Certificate of Participation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal-up" role="button" tabindex="0" aria-label="Open SMIT Hackathon certificate">
+        <div class="cert-image-wrap">
+          <img class="cert-image" src="hackaton.jpeg" alt="Coding Night 2025 Hackathon participation certificate from Saylani Mass Training Programme">
+        </div>
+        <div class="cert-content">
+          <div class="cert-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-title">SMIT Hackathon &middot; Coding Night 2025</h3>
+            <p class="cert-issuer">Saylani Mass Training Programme (SMIT)</p>
+            <p class="cert-date">12 Hours &middot; Certificate of Participation</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT — form sends straight to WhatsApp
+     ============================================================ -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+      <div class="contact-availability reveal-up"><span></span>Available for work</div>
+      <p class="section-eyebrow reveal-up">GET IN TOUCH</p>
+      <h2 class="section-title reveal-up">Have an idea?<br>Let's make it real.</h2>
+      <p class="section-sub reveal-up">
+        Open to internships, junior developer roles and selected freelance projects.
+        Send the details and I will get back to you within a day.
+      </p>
+
+      <div class="contact-details reveal-up">
+        <a href="mailto:farooqmalikp21@gmail.com" class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </span>
+          <span class="contact-detail-copy"><small>EMAIL</small><span>farooqmalikp21@gmail.com</span></span>
+          <svg class="contact-detail-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a href="https://wa.me/923223399125" target="_blank" rel="noopener" class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-4.95A9 9 0 1 1 8 19.5z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0zm5 4a5 5 0 0 1-4-2"/></svg>
+          </span>
+          <span class="contact-detail-copy"><small>WHATSAPP</small><span>+92 322 3399125</span></span>
+          <svg class="contact-detail-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="contact-detail-copy"><small>LOCATION</small><span>Karachi, Pakistan</span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="contact-social-row reveal-up">
+        <span class="contact-social-label">Find me online</span>
+        <div class="hero-socials contact-socials">
+          <a href="https://github.com/FarooqAbdullah664" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.16a10.8 10.8 0 0 1 5.7 0c2.17-1.47 3.13-1.16 3.13-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/farooq-abdullah-9484a4331" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="mailto:farooqmalikp21@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form reveal-up" id="contactForm">
+      <div class="contact-form-head">
+        <div>
+          <h3>Start a conversation</h3>
+          <p>Share a few details about your opportunity or project.</p>
+        </div>
+        <span class="contact-form-mark" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"/><path d="M8 9h8M8 13h5"/></svg></span>
+      </div>
+
+      <div class="form-split">
+        <div class="form-row">
+          <label class="form-label" for="cf-name">Your Name</label>
+          <input class="form-input" type="text" id="cf-name" name="name" placeholder="Ali Raza" required>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="cf-contact">Email or Phone</label>
+          <input class="form-input" type="text" id="cf-contact" name="contact" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label" for="cf-message">Message</label>
+        <textarea class="form-input form-textarea" id="cf-message" name="message" rows="5" placeholder="Tell me a bit about the role or project..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary form-submit">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-4.95A9 9 0 1 1 8 19.5z"/></svg>
+        SEND ON WHATSAPP
+      </button>
+      <p class="form-hint">Opens WhatsApp with your message pre-filled — nothing is sent without your confirmation.</p>
+    </form>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-top">
+      <a href="#" class="nav-logo footer-logo"><span class="nav-logo-mark"></span><span class="nav-logo-word">FAROOQ<span class="accent-dot">.</span></span></a>
+      <p class="footer-tagline">Building modern, scalable and interactive web experiences.</p>
+
+      <button class="footer-top-btn" id="backToTop" type="button" aria-label="Back to top" title="Back to top">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+      </button>
+    </div>
+
+    <div class="footer-mid">
+      <nav class="footer-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="hero-socials footer-socials">
+        <a href="https://github.com/FarooqAbdullah664" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.16a10.8 10.8 0 0 1 5.7 0c2.17-1.47 3.13-1.16 3.13-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.03 11.03 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/farooq-abdullah-9484a4331" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:farooqmalikp21@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Farooq Abdullah. All rights reserved.</p>
+      <p>Designed &amp; built with care in Karachi.</p>
+    </div>
+
+  </div>
+</footer>
+
+<dialog class="cert-lightbox" id="certLightbox" aria-label="Certificate preview">
+  <button class="cert-lightbox-close" id="certLightboxClose" type="button" aria-label="Close certificate preview">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <img class="cert-lightbox-image" id="certLightboxImage" src="" alt="">
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
