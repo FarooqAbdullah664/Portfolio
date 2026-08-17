@@ -62,10 +62,12 @@ function revealHero(){
 // NAVBAR — solid background on scroll + mobile menu toggle
 // ============================================================
 const navbarEl = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
+function updateNavbarScrollState(){
   if (window.scrollY > 40) navbarEl.classList.add('solid');
   else navbarEl.classList.remove('solid');
-}, { passive: true });
+}
+window.addEventListener('scroll', updateNavbarScrollState, { passive: true });
+updateNavbarScrollState();
 
 const navBurger = document.getElementById('navBurger');
 const navMobile = document.getElementById('navMobile');
@@ -86,11 +88,14 @@ navBurger.addEventListener('click', () => {
 navMobile.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', closeMobileNav);
 });
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 980) closeMobileNav();
+});
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') closeMobileNav();
 });
 
-const trackedSections = ['about', 'work', 'skills', 'education', 'certificates', 'contact']
+const trackedSections = ['hero', 'about', 'work', 'skills', 'education', 'certificates', 'contact']
   .map(id => document.getElementById(id))
   .filter(Boolean);
 const trackedNavLinks = document.querySelectorAll('.nav-links a[href^="#"], .nav-mobile a[href^="#"]');
